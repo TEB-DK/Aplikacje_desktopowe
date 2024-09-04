@@ -2,7 +2,6 @@
 
 Repozytorium poświęcone aplikacjom desktopowym tworzonym w języku Python i frameworku graficznego interfejsu "Tkinter".
 
-
 ---
 Aby zacząć w ogóle tworzyć aplikacje desktopowe należy zainstalować pakiet tkinter
 ```console
@@ -48,3 +47,28 @@ root.mainloop()
 
 Jak widać tkinter posiada metody, które generują nam tak zwane "widgety", każdy widget musi być przypisany do jakiegoś elementu rodzica, dlatego też w nawiasie w pierwszej kolejności widać zmienną ``root``, następnie taki widget może przyjmować wiele atrybutów, przycisk przyjmuje chociażby tekst, szerokość, a nawet polecenie do wykonania gdy zostanie kliknięty. 
 Każdy widget musi być po utworzeniu "spakowany" aby został wyświetlony w sposób prawidłowy w naszym oknie. Takie pakowanie posiada też swój zestaw możliwości jeżeli chodzi o umieszczenie widgetu, np. pady, gdzie oznacza padding dla osi x czyli odpowiednia odległość w pionie od góry i od dołu.
+
+W przypadku gdy chcemy wyśrodkować pojawiające się okno na monitorze, możemy skorzystać z właściwości informacji systemowych o których wie nasze główne okno ``root``
+```python
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+```
+Dzięki tym metodom automatycznie pobierzemy rozdzielczość naszego monitora i przy odrobinie matematyki możliwe będzie wyśrodkowanie okna, które chcemy utworzyć
+```python
+import tkinter
+
+root = tkinter.Tk()
+root.title('Centered!')
+
+w_width = 600
+w_height = 400 
+
+screen_width = root.winfo_screenwidth()
+screen_height = root.winfo_screenheight()
+
+start_x = int((screen_width/2) - (w_width/2))
+start_y = int((screen_height/2) - (w_height/2))
+
+root.geometry(f'{w_width}x{w_height}+{start_x}+{start_y}')
+root.mainloop()
+```
