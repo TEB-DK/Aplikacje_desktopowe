@@ -72,3 +72,168 @@ start_y = int((screen_height/2) - (w_height/2))
 root.geometry(f'{w_width}x{w_height}+{start_x}+{start_y}')
 root.mainloop()
 ```
+
+## Widgety w Tkinter
+
+Każdy widget posiada wspólną cechę ze wszystkimi, a jest nią zbiór argumentów. Oznacza to, że w przypadku gdy tworzymy widget np. ``tk.Button()`` to przyjmuje on w pierwszej kolejności dwa argumenty ``parent`` oraz ``options``.
+```python
+tk.Button(parent, options)
+```
+Przy czym:
+- ``parent`` jest to rodzic widgetu który chcemy umiejscowić i sugeruje on tam okno (czyli rodzica) w którym ma się znajdować.
+- ``options`` są to dodatkowe opcje takie jak ``text`` widgetu, ``bg`` czyli kolor tła (background color) i inne dodatkowe "smaczki".
+
+
+> [!IMPORTANT]
+> Każdy widget należy spakować metodą ``.pack()`` przed ``root.mainloop()`` by został wyświetlony w naszym oknie aplikacji!
+
+
+
+#### Lista dostępnych widgetów
+<ul type="square">
+    <li>
+        <details>
+            <summary>Label</summary>
+            Label to widżet służący do implementacji pól wyświetlania, w których można umieszczać tekst lub obrazy. 
+			
+			
+   ```python
+   tk.Label(root, text="Przykładowy tekst")
+   ```
+			
+        
+</details>
+    </li>
+    
+<li>        
+<details>
+<summary>Button</summary>
+Button jest graficznym elementem sterującym używanym do tworzenia klikalnych przycisków w graficznym interfejsie użytkownika (GUI). Zapewnia on użytkownikom sposób wyzwalania akcji lub zdarzeń po kliknięciu (odpowiada temu dodatkowa opcja ``command``).
+
+```python
+tk.Button(root, text="Przykładowy przycisk", bg="lightgreen")
+```
+ 
+</details>
+</li>
+    <li>        
+        <details>
+            <summary>Entry</summary>
+            Entry jest widżetem służącym do wprowadzania lub wyświetlania pojedynczej linii tekstu. Można powiedzieć, że jest odpowiednikiem input'a w HTML. 
+            
+	
+```python
+tk.Entry(root, font=('arial', 12, 'bold'))
+```
+
+
+   
+</details>
+    </li>
+    <li>        
+        <details>
+            <summary>Frame</summary>
+            Frame to obszar na ekranie. Widżet ten może być również używany jako miejsce bazowe (rodzic) do implementacji złożonych widżetów. Służy do organizowania grupy widżetów.
+            Widżet może zdawać się skomplikowany, jednak taki nie jest - służy do grupowania innych widżetów, porównalibyśmy go do znacznika `div` w HTML, możemy również dzięki niemu lepiej organizować przestrzeń naszej aplikacji. 
+                
+```python
+first_frame = tk.Frame(root,background="blue", padx=20, pady=20)
+label = tk.Label(first_frame, text="Tekst label")
+button = tk.Button(first_frame, text="Przycisk", bg="lightgreen")
+entry = tk.Entry(first_frame, font=('arial', 12, 'bold'))
+label.pack()
+button.pack()
+entry.pack()
+first_frame.pack(padx=20, pady=20)
+	
+second_frame = tk.Frame(root,background="orange", padx=20, pady=20)
+
+label2 = tk.Label(second_frame, text="Tekst label")
+button2 = tk.Button(second_frame, text="Przycisk", bg="lightgreen")
+entry2 = tk.Entry(second_frame, font=('arial', 12, 'bold'))
+label2.pack()
+button2.pack()
+entry2.pack()
+second_frame.pack(padx=20, pady=20)
+```
+
+Jak widać ramka może posiadać sporą ilość widżetów, które trzeba spakować, aby nieco ułatwić sobie życie "pakowaniem" można zastosować prostą pętle, która tyczy się wszystkich dzieci naszej ramki (czyli widżetów)
+```python
+for dziecko in first_frame.children.values():
+    dziecko.pack()
+```
+
+</details>
+    </li>
+    <li>        
+        <details>
+            <summary>Checkbutton</summary>
+            Checkbutton jest standardowym widżetem Tkinter, który jest używany do implementacji opcji włączania/wyłączania. Przyciski wyboru mogą zawierać tekst lub obrazy. 
+
+```python
+tk.Checkbutton(root, text="Check mate!", onvalue=1, offvalue=0)
+```
+			
+</details>
+    </li>
+    <li>        
+        <details>
+            <summary>Radiobutton</summary>
+            Radiobutton jest standardowym widżetem używanym do implementacji wyboru "jeden z wielu". Radiobuttony mogą zawierać tekst lub obrazy, a z każdym przyciskiem można powiązać funkcję lub metodę języka Pythona.
+            
+```python
+tk.Radiobutton(root, text="First option of many!", value=1)
+```
+			
+</details>
+    </li>
+    <li>        
+        <details>
+            <summary>Listbox</summary>
+            Listbox służy do wyświetlania listy elementów. 
+			Elementy te muszą mieć ten sam typ czcionki i ten sam kolor czcionki.
+			Elementy muszą być również typu Text. Użytkownik może wybrać jeden lub więcej elementów z podanej listy zgodnie z wymaganiami.
+            
+```python
+listbox = tk.Listbox(first_frame, bg="lightblue", fg="black", font=("Helvetica", 10))
+listbox.insert(1,"First")
+listbox.insert(2,"Second")
+listbox.insert(3,"Third")
+listbox.insert(4,"Forth")
+```
+			
+</details>
+    </li>
+    <li>        
+        <details>
+            <summary>Menu</summary>
+            Powszechnym zastosowaniem menu jest zapewnienie wygodnego dostępu do różnych operacji, takich jak zapisywanie lub otwieranie pliku, zamykanie programu lub manipulowanie danymi. Menu najwyższego poziomu są wyświetlane tuż pod paskiem tytułu okna głównego lub innych okien najwyższego poziomu.
+			
+```python
+menu = tk.Menu(root)
+
+first_menu = tk.Menu(menu, tearoff=0)
+menu.add_cascade(label="Option", menu=first_menu)
+first_menu.add_command(label="> Suboption 1", command=donothing)
+first_menu.add_command(label="> Suboption 2", command=donothing)
+first_menu.add_command(label="> Suboption 3", command=donothing)
+
+second_menu = tk.Menu(menu, tearoff=0)
+menu.add_cascade(label="Edit", menu=second_menu)
+second_menu.add_command(label="> Subedit 1", command=donothing)
+second_menu.add_command(label="> Subedit 2", command=donothing)
+second_menu.add_command(label="> Subedit 3", command=donothing)
+
+root.config(menu=menu)
+```
+
+1. Najpierw tworzony jest widżet Menu i dodawany do naszego okna głównego (root).
+2. Następnie tworzone jest pierwsze menu którego rodzicem jest widżet "menu".
+3. Aby dodać rozwijaną opcje z "pod opcjami" należy wykorzystać metode ``add_cascade()``, która określa nazwe opcji rozwijanej oraz jej główne menu (utworzone linie wcześniej).
+4. Ostecznie by dodać podopcje wykorzystywana jest metoda ``add_command()``, przyjmująca przykładowy tekst oraz polecenie do wykonania.
+
+##### Należy również do głównego okna aplikacji dodać configuracje, która wskazuje, które menu będzie podpięte pod to okno.
+
+</details>
+    </li>
+</ul>
