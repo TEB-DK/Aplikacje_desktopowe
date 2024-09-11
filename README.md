@@ -73,6 +73,12 @@ root.geometry(f'{w_width}x{w_height}+{start_x}+{start_y}')
 root.mainloop()
 ```
 
+#### Spróbuj wykonać 🫅🏿
+
+1. Utwórz nowy plik ``.py`` i stwórz nowe okno aplikacji.
+2. Dopasuj wielkość okna tak aby wypełniała ekran w 75% szerokości i 50% wysokości
+3. Wyśrodkuj okno aplikacji w płaszczyźnie "x" (w szerokości), natomiast w płaszczyźnie "y" (w wysokości) ustaw je tak, aby odstawało od górnej krawędzi o 50px
+
 ## Widgety w Tkinter
 
 Każdy widget posiada wspólną cechę ze wszystkimi, a jest nią zbiór argumentów. Oznacza to, że w przypadku gdy tworzymy widget np. ``tk.Button()`` to przyjmuje on w pierwszej kolejności dwa argumenty ``parent`` oraz ``options``.
@@ -237,3 +243,17 @@ root.config(menu=menu)
 </details>
     </li>
 </ul>
+
+#### Spróbuj wykonać 🫅🏿
+1. Utwórz przycisk i dodaj go do aplikacji z nazwą ``Click`` oraz tłem ``Crimson``
+2. Utwórz nowe menu ``Options`` które będzie posiadało 3 podopcje o nazwach ``Check system``, ``Insert file`` oraz ``Exit``
+3. Wypozycjonuj 3 dowolne widżety w oknie aplikacji oraz zmodyfikuj ich wygląd.
+
+
+## Pozycjonowanie elementów
+
+### Pozycjonowanie ``ABSOLUTNE``
+
+### Układ ``SIATKOWY``
+
+### Układ ``WYPEŁNIAJĄCY``
