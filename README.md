@@ -254,7 +254,7 @@ root.config(menu=menu)
 
 ### Pozycjonowanie ``PLACE``
 
-### Układ ``GRID``
+### Układ ``GRID`` <img src='https://www.svgrepo.com/show/499608/grid-aspect-ratio.svg' height=32 align=top >
 
 Układ pozycjonowania elementów `grid` opiera się na siatce, którą sami jesteśmy w stanie utworzyć. Pozycjonowanie odbywa się podobnie jak przypadku `place` lub `pack`.
 ```python
@@ -316,7 +316,7 @@ root.mainloop()
 ### Układ ``PACK``
 
 
-## Zmienne Tkinter
+## Zmienne Tkinter <img src='https://www.svgrepo.com/show/361356/symbol-variable.svg' height=32 align=top>
 
 Zmienne są używane do przechowywania i zarządzania danymi, które mogą być dynamicznie zmieniane w trakcie działania aplikacji. Tkinter oferuje kilka typów zmiennych, które są specjalnie zaprojektowane do współpracy z widgetami.
 
