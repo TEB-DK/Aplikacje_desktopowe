@@ -252,8 +252,119 @@ root.config(menu=menu)
 
 ## Pozycjonowanie elementów
 
-### Pozycjonowanie ``ABSOLUTNE``
+### Pozycjonowanie ``PLACE``
 
-### Układ ``SIATKOWY``
+### Układ ``GRID``
 
-### Układ ``WYPEŁNIAJĄCY``
+Układ pozycjonowania elementów `grid` opiera się na siatce, którą sami jesteśmy w stanie utworzyć. Pozycjonowanie odbywa się podobnie jak przypadku `place` lub `pack`.
+```python
+button = Tk.Button(root, text="Bazinga")
+button.grid(row=0, column=0)
+```
+
+Bardzo ważnym aspektem w układzie siatkowym jest proporcja wierszy oraz kolumn, którą możemy ustawić za pomocą
+```python
+root.grid_columnconfigure(0, weight=1)
+root.grid_rowconfigure(0, weight=1)
+```
+
+Pierwsza wartość ``0`` określa indeks wiersza lub kolumny, tym samym możliwe jest zdefiniowanie ilości wierszy oraz kolumn dla naszej aplikacji.
+Drugą wartością jest ``weight`` czyli współczynnik proporcji wzgledem reszty wierszy lub kolumn w danej siatce, jeżeli `kolumna 0` ma wagę 1, a `kolumna 1` ma wagę 2, to `kolumna 1` będzie szersza od `kolumny 1`. W zależności jakie wartości wag ustawimy oraz ile wierszy lub kolumn wystąpi w naszej aplikacji to odpowiednio można dostosować to do szerokości czy wysokości aplikacji.
+
+>[!IMPORTANT]
+>`.grid(options)` posiada następujące możliwości:
+> - [x] row, column - miejsce wiersza oraz kolumny w której ma zostać umieszczony widżet. Oba zaczynają od punktu 0.
+> - [x] rowspan, columnspan - ustala na ile wierszy lub kolumn będzie rozciągniety widżet.
+> - [x] padx, pady - Ilość pikseli `WOKÓŁ` widżetu / pomiędzy widżetami (w osi x lub osi y) (nazwyczajniejszy padding).
+> - [x] ipadx, ipady - Ilość pikseli paddingu `WEWNĄTRZ` widżetu.
+> - [x] sticky - określa wartości kierunkowe `S`, `N`, `E`, `W` oraz kombinacje tych kierunków. Służy do umiejscowienia widżetu wewnątrz komórki w której został umieszczony (np. `N` przyklei widżet do strony `north` komórki w której jest). Jeżeli połączymy wszystkie strony ze sobą (`NSWE`) to widżet wypełni komórkę w każdym kierunku. Domyślną wartością jest środek w komórce.
+
+```python
+import tkinter as tk
+
+root = tk.Tk()
+h = root.winfo_screenheight()
+w = root.winfo_screenwidth()
+
+root.title("GRID BABY!")
+root.resizable(False,False)
+root.geometry(f"{int(w*0.6)}x{int(h*0.6)}+0+0")
+
+root.grid_columnconfigure([0,1,2,3], weight=1)
+root.grid_rowconfigure([0,1,2,3], weight=1)
+
+btn = tk.Button(root, bg="red", text="xdd")
+btn.grid(row=0, column=0, sticky="NSEW")
+
+btn2 = tk.Button(root, bg="skyblue", text="eoo")
+btn2.grid(row=0, column=1, sticky="NSEW")
+
+btn3 = tk.Button(root, bg="crimson", text="xpp")
+btn3.grid(row=1, column=1, sticky="NSEW")
+
+btn4 = tk.Button(root, bg="yellow", text="eoo")
+btn4.grid(row=2, column=2, sticky="NSEW")
+
+
+root.mainloop()
+```
+>[!NOTE]
+> Dodatkowo każda ramka `tk.Frame` lub okno `tk.TopLevel` ma domyślnie wbudowaną metodę `grid_columnconfigure() / grid_rowconfigure()` aby można było w nich zagnieżdżać pozycjonowanie siatkowe.
+
+
+
+### Układ ``PACK``
+
+
+## Zmienne Tkinter
+
+Zmienne są używane do przechowywania i zarządzania danymi, które mogą być dynamicznie zmieniane w trakcie działania aplikacji. Tkinter oferuje kilka typów zmiennych, które są specjalnie zaprojektowane do współpracy z widgetami.
+
+- `StringVar`: Przechowuje ciągi znaków (tekst).
+- `IntVar`: Przechowuje wartości całkowite.
+- `DoubleVar`: Przechowuje wartości zmiennoprzecinkowe.
+- `BooleanVar`: Przechowuje wartości logiczne (True/False).
+
+Przykładem zastosowania tych zmiennych może być:
+```python
+string_var = tk.StringVar()
+int_var = tk.IntVar()
+double_var = tk.DoubleVar()
+boolean_var = tk.BooleanVar()
+
+# Przypisywanie wartości
+string_var.set("Hello, Tkinter!")
+int_var.set(42)
+double_var.set(3.14)
+boolean_var.set(True)
+
+# Pobieranie wartości
+print(string_var.get())  # Output: Hello, Tkinter!
+print(int_var.get())     # Output: 42
+print(double_var.get())  # Output: 3.14
+print(boolean_var.get()) # Output: True
+```
+>[!IMPORTANT]
+> - Aby `pobrać` wartość ze zmiennej wykorzystujemy metodę `.get()`
+> - Aby `ustawić` wartość w zmiennej wykorzystujemy metodę `.set()`
+
+Widżety w Tkinter posiadają zazwyczaj opcje `textvariable` lub `variable` jeżeli występuje możliwość przechowywania jakichś danych, wtedy należy do tej właściwości przypisać zmienną tk aby móc nią manipulować za pomocą funkcji.
+
+```python
+import tkinter as tk
+
+def wypisz_tekst():
+    tekst = entry.get()
+    print("Wpisany tekst:", tekst)
+
+root = tk.Tk()
+root.title("Przykład Entry i Button")
+
+entry = tk.Entry(root, width=30)
+entry.pack(pady=10)
+
+button = tk.Button(root, text="Wypisz tekst", command=wypisz_tekst)
+button.pack(pady=10)
+
+root.mainloop()
+```
