@@ -1,5 +1,14 @@
 # QTDesigner
 
+### Instalacja
+
+W terminalu uruchomić polecenie instalacyjne
+
+```python
+pip install PySide6
+```
+  
+
 >[!NOTE]
 > Plik `designer.exe` znajduje się PRAWDOPODOBNIE w ``%APPDATA%/Python/Python312/Lib/site-packages/PySide6``
 
