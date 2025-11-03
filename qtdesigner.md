@@ -23,6 +23,19 @@ pip install PySide6
 > app.exec()
 > ```
 
+### Funkcjonalność sygnałów
+
+Aby dodać własną funkcjonalność do sygnału, należy zapisać funkcję o dowolnej nazwie.
+```python
+def foobar():
+    print("FOO\tBAR")
+```
+
+Następnie `połączyć (connect)` do naszego chociażby przycisku po kliknięciu, który ma określoną akcje.
+```python
+self.pushButton.clicked.connect(foobar)
+```
+
 ### Zadanie 1.
 
 Wygląd aplikacji
