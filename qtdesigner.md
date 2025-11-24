@@ -123,7 +123,7 @@ Polecenie: Odwzoruj aplikacje widoczną powyżej i zastosuj nowe możliwości po
 
 ### Zadanie 3.
 
-Wygląd aplikacji
+Wygląd aplikacji x
 
 <img width="69%" alt="image" src="https://github.com/user-attachments/assets/8be48f03-9b7d-40e5-b612-337b8d5d4263" />
 
