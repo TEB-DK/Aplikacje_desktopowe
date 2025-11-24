@@ -129,4 +129,4 @@ Wygląd aplikacji
 
 Polecenie: [Arkusz](https://github.com/Technikum-TEB-Edukacja-we-Wroclawiu/INF.04-rozwiazania/blob/main/_arkusze/2023-01/inf_04_2023_01_01_SG_kolor.pdf)
 
-* - Zaimplementuj funkcjonalność losowego koloru tła aplikacji za każdym otworzeniem jej.
+* - Zaimplementuj funkcjonalność losowego koloru tła aplikacji za każdym otworzeniem jej. Z wykorzystaniem `setStyleSheet`.
