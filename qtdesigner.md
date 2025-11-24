@@ -123,10 +123,13 @@ Polecenie: Odwzoruj aplikacje widoczną powyżej i zastosuj nowe możliwości po
 
 ### Zadanie 3.
 
-Wygląd aplikacji x
+Wygląd aplikacji 
 
 <img width="69%" alt="image" src="https://github.com/user-attachments/assets/8be48f03-9b7d-40e5-b612-337b8d5d4263" />
 
 Polecenie: [Arkusz](https://github.com/Technikum-TEB-Edukacja-we-Wroclawiu/INF.04-rozwiazania/blob/main/_arkusze/2023-01/inf_04_2023_01_01_SG_kolor.pdf)
 
 * - Zaimplementuj funkcjonalność losowego koloru tła aplikacji za każdym otworzeniem jej. Z wykorzystaniem `setStyleSheet`.
+
+
+x
