@@ -1,5 +1,5 @@
 # QTDesigner
-xxxx
+xxxxx
 ### Instalacja
 
 W terminalu uruchomić polecenie instalacyjne
