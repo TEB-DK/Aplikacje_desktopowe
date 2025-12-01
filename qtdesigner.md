@@ -131,21 +131,13 @@ Polecenie: [Arkusz](https://github.com/Technikum-TEB-Edukacja-we-Wroclawiu/INF.0
 
 * - Zaimplementuj funkcjonalność losowego koloru tła aplikacji za każdym otworzeniem jej. Z wykorzystaniem `setStyleSheet`.
 
-x
-x
-x
-x
-x
-x
-x
-x
-d
-x
-x
-x
-x
-x
-x
-x
-x
-X
+### Zadanie 4.
+
+Wygląd aplikacji
+
+<img width="69%" alt="image" src="https://github.com/user-attachments/assets/558d73c8-15e4-4975-ad54-2493caaa46a2" />
+
+Polecenie: [Arkusz](https://github.com/Technikum-TEB-Edukacja-we-Wroclawiu/INF.04-rozwiazania/blob/main/_arkusze/2025-06/inf_04_2025_06_01_SG.pdf)
+
+* - Dodaj dodatkowy przycisk do aplikacji wyświetlający okienko z 4-roma bloczkami odcieni wybranego koloru i wartości ( według wartości RGB )
+
