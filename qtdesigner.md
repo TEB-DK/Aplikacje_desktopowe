@@ -141,4 +141,10 @@ Wygląd aplikacji
 Polecenie: [Arkusz](https://github.com/Technikum-TEB-Edukacja-we-Wroclawiu/INF.04-rozwiazania/blob/main/_arkusze/2025-06/inf_04_2025_06_01_SG.pdf)
 
 * - Dodaj dodatkowy przycisk do aplikacji wyświetlający okienko z 4-roma bloczkami odcieni wybranego koloru i wartości ( według wartości RGB )
+ 
+
+### Zadanie 5
+
+Polecenie: [Arkusz](https://github.com/Technikum-TEB-Edukacja-we-Wroclawiu/INF.04-rozwiazania/blob/main/_arkusze/2025-06/inf_04_2025_06_02_SG.pdf)
+
 
