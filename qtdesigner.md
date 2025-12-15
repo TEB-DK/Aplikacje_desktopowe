@@ -147,4 +147,11 @@ Polecenie: [Arkusz](https://github.com/Technikum-TEB-Edukacja-we-Wroclawiu/INF.0
 
 Polecenie: [Arkusz](https://github.com/Technikum-TEB-Edukacja-we-Wroclawiu/INF.04-rozwiazania/blob/main/_arkusze/2025-06/inf_04_2025_06_02_SG.pdf)
 
+### Zadanie 6
 
+Wygląd aplikacji
+
+<img width="69%" alt="image" src="https://github.com/user-attachments/assets/2fc45247-db08-41d3-bd4e-472a7199448e" />
+
+Polecenie: Stwórz działający kalkulator prosty według wyglądu aplikacji przedstawionego powyżej. Kalkulator ma posiadać funkcje takie jak: `dodawanie`, `odejmowanie`, `mnożenie`, `dzielenie`, `modulo` - wynik reszty z dzielenia.
+Ponadto ma mieć możliwość czyszczenia obliczeń za pomocą przycisku `wyczyść` oraz zmiana koloru tła okna wprowadzania wartości na kolory podane w wyglądzie aplikacji.
