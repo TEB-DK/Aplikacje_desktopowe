@@ -121,6 +121,8 @@ Polecenie: Odwzoruj aplikacje widoczną powyżej i zastosuj nowe możliwości po
 
 * - Wykorzystując odwołanie do `setStyleSheet` zaimplementuj do dowolnego przycisku efekt zmiany styli dla dowolnego widgetu w aplikacji.
 
+** - Utwórz aplikację odwzorowaną na obrazku powyżej (zadanie 2), dodaj przycisk dzięki któremu pojawi się nowe okno z możliwością wyliczenia przesyłki na dane wojewodztwo, w zależności od wybranego wojewodztwa kwota wysyłki (pocztówki, listu, paczki) zostanie pomnożona przez dany procent, a następnie wyświetli wyliczoną kwotę wysyłki.
+
 
 ### Zadanie 3.
 
