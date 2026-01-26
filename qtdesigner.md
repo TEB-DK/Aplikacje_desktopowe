@@ -164,6 +164,8 @@ Wygląd aplikacji
 
 <img width="69%" alt="Desktop - 1" src="https://github.com/user-attachments/assets/36f00978-d709-49bb-973a-829865fce374" />
 
+Tło: <img width="800" height="640" alt="templatex2 (1)" src="https://github.com/user-attachments/assets/54f1217a-f6e7-4887-a15c-b23e9167029f" />
+
 Polecenie: Odtworzyć wygląd aplikacji oraz wyświetlić okienko z wprowadzonymy informacjami po zatwierdzeniu, hasło ma wyświetlić 2 ostatnie znaki, początek ma być zagwiazdkowany.
 
 
