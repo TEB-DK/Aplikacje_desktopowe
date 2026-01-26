@@ -157,3 +157,13 @@ Wygląd aplikacji
 
 Polecenie: Stwórz działający kalkulator prosty według wyglądu aplikacji przedstawionego powyżej. Kalkulator ma posiadać funkcje takie jak: `dodawanie`, `odejmowanie`, `mnożenie`, `dzielenie`, `modulo` - wynik reszty z dzielenia.
 Ponadto ma mieć możliwość czyszczenia obliczeń za pomocą przycisku `wyczyść` oraz zmiana koloru tła okna wprowadzania wartości na kolory podane w wyglądzie aplikacji.
+
+### Zadanie 7
+
+Wygląd aplikacji
+
+<img width="69%" alt="Desktop - 1" src="https://github.com/user-attachments/assets/36f00978-d709-49bb-973a-829865fce374" />
+
+Polecenie: Odtworzyć wygląd aplikacji oraz wyświetlić okienko z wprowadzonymy informacjami po zatwierdzeniu, hasło ma wyświetlić 2 ostatnie znaki, początek ma być zagwiazdkowany.
+
+
