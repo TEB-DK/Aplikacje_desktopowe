@@ -168,4 +168,13 @@ Tło: <img width="800" height="640" alt="templatex2 (1)" src="https://github.com
 
 Polecenie: Odtworzyć wygląd aplikacji oraz wyświetlić okienko z wprowadzonymy informacjami po zatwierdzeniu, hasło ma wyświetlić 2 ostatnie znaki, początek ma być zagwiazdkowany.
 
+### Zadanie 8
+
+<img width="69%" alt="Group 1" src="https://github.com/user-attachments/assets/19641465-57fc-4bb9-8408-dc73585ad97b" />
+
+Polecenie: Odtwórz wygląd aplikacji oraz dodaj funkcjonalność tworzenia okna na podstawie danych przekazanych do pierwotnej aplikacji. Pojawiające się utworzone okno ma mieć nazwę, kolor, wielkość oraz tekst dodatkowy pobierany z pól wprowadzania przez użytkownika.
+
+* - Dodatkowo wykonaj podgląd okna w aplikacji, który aktualizuje swój wygląd przy każdej wprowadzonej zmianie wartości.
+
+
 
