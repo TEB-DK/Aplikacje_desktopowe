@@ -176,5 +176,7 @@ Polecenie: Odtwórz wygląd aplikacji oraz dodaj funkcjonalność tworzenia okna
 
 * - Dodatkowo wykonaj podgląd okna w aplikacji, który aktualizuje swój wygląd przy każdej wprowadzonej zmianie wartości.
 
+- <img width="597" height="175" alt="image" src="https://github.com/user-attachments/assets/014bcf9c-34ae-466b-8d27-9a329ab95a71" />
+- Okno podglądowe aplikacji powinno wyglądać następująco oraz mieć możliwość wyliczenia wartości która wyświetli się w okienku potwierdzającym.
 
 
