@@ -179,4 +179,10 @@ Polecenie: Odtwórz wygląd aplikacji oraz dodaj funkcjonalność tworzenia okna
 - <img width="597" height="175" alt="image" src="https://github.com/user-attachments/assets/014bcf9c-34ae-466b-8d27-9a329ab95a71" />
 - Okno podglądowe aplikacji powinno wyglądać następująco oraz mieć możliwość wyliczenia wartości która wyświetli się w okienku potwierdzającym.
 
+### Zadanie 9
+
+- <img width="989" height="402" alt="Group 1 (1)" src="https://github.com/user-attachments/assets/8ba77f33-6d15-41fb-8e29-53439ca2ff9a" />
+
+Polecenie: Wykonaj kolejną aplikację TODO, po kliknięciu przycisku "Dodaj do listy", aplikacja ma dodawać nowe zadanie do listy zadań która jest listą przesuwaną.
+
 
