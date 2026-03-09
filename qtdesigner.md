@@ -186,3 +186,5 @@ Polecenie: Odtwórz wygląd aplikacji oraz dodaj funkcjonalność tworzenia okna
 Polecenie: Wykonaj kolejną aplikację TODO, po kliknięciu przycisku "Dodaj do listy", aplikacja ma dodawać nowe zadanie do listy zadań która jest listą przesuwaną.
 
 
+* - <img width="685" height="402" alt="Group 2" src="https://github.com/user-attachments/assets/8b8c8bcb-b7dd-4cac-a35c-099dfca2b9e3" />
+Polecenie: Wykonaj wersje uproszczoną zadania 9
