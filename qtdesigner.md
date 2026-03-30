@@ -200,6 +200,7 @@ Aplikacja ma możliwość:
 - Dodanie podglądu składników oraz przepisu po kliknięciu na dany posiłek.
 - Ulubione dania mają mieć możliwość bycia zapisanymi do pliku, z którego potem będą odczytywane i wprowadzane do miejsca "ulubione"
 - Możliwość wyczyszczenia ulubionych jednym przyciskiem (wraz z usunięciem pliku .txt)
+- 🌟 Zaprojektowanie bazy danych w MySQLite i wykorzystanie jej do logowania oraz dodawania ulubionych posiłków.
 - 🌟 Dodatkowej dowolnej funkcjonalności, która jest unikalna na tle klasy. (Dodatkowe punkty uznania)
 - 🌟 Panel logowania do aplikacji (możliwe wykorzystanie lokalnych sposobów "bazy danych")
 
