@@ -188,3 +188,37 @@ Polecenie: Wykonaj kolejną aplikację TODO, po kliknięciu przycisku "Dodaj do 
 
 * - <img width="685" height="402" alt="Group 2" src="https://github.com/user-attachments/assets/8b8c8bcb-b7dd-4cac-a35c-099dfca2b9e3" />
 Polecenie: Wykonaj wersje uproszczoną zadania 9
+
+
+### Zadanie 10 - Projekt
+Utwórz aplikację do wyszukiwania posiłków wraz w wykorzystaniem darmowego API (przykładowe API podane poniżej).
+Aplikacja ma możliwość:
+- Wyszukiwarki posiłków na podstawie słowa np. "kurczak".
+- Dodania posiłku do ulubionych.
+- Usunięcia posiłku z ulubionych.
+- Dodanie funkcjonalnych filtrów dań regionalnych, np. Meksykańskie, Greckie, Włoskie, Hamerykańskie..
+- Dodanie podglądu składników oraz przepisu po kliknięciu na dany posiłek.
+- Ulubione dania mają mieć możliwość bycia zapisanymi do pliku, z którego potem będą odczytywane i wprowadzane do miejsca "ulubione"
+- Możliwość wyczyszczenia ulubionych jednym przyciskiem (wraz z usunięciem pliku .txt)
+- 🌟 Dodatkowej dowolnej funkcjonalności, która jest unikalna na tle klasy. (Dodatkowe punkty uznania)
+- 🌟 Panel logowania do aplikacji (możliwe wykorzystanie lokalnych sposobów "bazy danych")
+
+Przykładowy wygląd aplikacji
+
+<img width="69%" alt="Surface Pro 8 - 1" src="https://github.com/user-attachments/assets/e9afc504-9c72-4cd0-af74-463fbcc3a29c" />
+
+
+Przykładowy kod pobrania posiłków z darmowego [API](https://www.themealdb.com/api.php) 
+```python
+def search_recipes(query):
+    url = f"https://www.themealdb.com/api/json/v1/1/search.php?s={query}"
+    
+    response = requests.get(url)
+    data = response.json()
+
+ if data["meals"]:
+        for meal in data["meals"]:
+           print(meal["strMeal"])
+    else:
+        print("Brak wyników")
+```
