@@ -223,3 +223,11 @@ def search_recipes(query):
     else:
         print("Brak wyników")
 ```
+
+
+
+### Zadanie 11 
+
+Aplikacja ma za zadanie przyjąć z pola wprowadzania wartość tekstową, a po zatwierdzeniu przyciskiem wyświetlić wprowadzony tekst w nowym oknie.
+
+<img width="743" height="901" alt="Surface Pro 8 - 2" src="https://github.com/user-attachments/assets/387f1a1d-88f4-4451-a250-bf3e1865d21d" />
