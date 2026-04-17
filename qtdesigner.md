@@ -230,6 +230,21 @@ def search_recipes(query):
 
 Aplikacja ma za zadanie przyjąć z pola wprowadzania wartość tekstową, a po zatwierdzeniu przyciskiem wyświetlić wprowadzony tekst w nowym oknie.
 
+
 [PODPOWIEDŹ DO ZADANIA](https://doc.qt.io/qtforpython-6/PySide6/QtWidgets/QMessageBox.html)
 
 <img width="743" height="901" alt="Surface Pro 8 - 2" src="https://github.com/user-attachments/assets/387f1a1d-88f4-4451-a250-bf3e1865d21d" />
+
+
+### Zadanie 12
+
+Utworzenie aplikacji mającej na celu symulacje wypożyczania aut na minuty.
+W założeniach aplikacji mamy: 
+- mieć prosty panel logowania (dane do logowania mają być odczytywane z pliku)
+- główny panel aplikacji musi posiadać formularz wypożyczenia auta wraz z drugim panelem przedstawiającym blok z krótkimi informacjami przez jaki czas jeszcze auto będzie w wypożyczeniu (obowiązkowo musi posiadać timer odliczający czas)
+- dodatkowo obowiązkowym jest dodanie kalkulacji na podstawie czasu wypożyczenia auta oraz typu auta (marka/model/rok), dzięki której wyliczona będzie kwota minutowa zsumowany do przykładowej godziny.
+- aplikacja musi posiadać drugą zakładkę która wyświetla wszystkich użytkowników wraz z wypożyczonymi autami oraz czasem jaki pozostał do oddania auta.
+- aplikacja pozwala na wypożyczenie jedynie jednego auta na jedne dane osobowe.
+
+Dodatkowo i obowiązkowo:
+- Należy dodać osobny formularz okna rejestrujący użytkowników do aplikacji, oraz zatwierdzający ich "prawo jazdy" aby mogli później w samej aplikacji móc wypożyczyć auto (wykorzystać bazę dane z prostą tabelą lub dwoma np. na użytkowników i auta dostępne w serwisie).
