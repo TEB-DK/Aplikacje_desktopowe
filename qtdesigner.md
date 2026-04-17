@@ -240,7 +240,7 @@ Aplikacja ma za zadanie przyjąć z pola wprowadzania wartość tekstową, a po 
 
 Utworzenie aplikacji mającej na celu symulacje wypożyczania aut na minuty.
 W założeniach aplikacji mamy: 
-- mieć prosty panel logowania (dane do logowania mają być odczytywane z pliku)
+- mieć prosty panel logowania (dane do logowania mogą być odczytywane z pliku)
 - główny panel aplikacji musi posiadać formularz wypożyczenia auta wraz z drugim panelem przedstawiającym blok z krótkimi informacjami przez jaki czas jeszcze auto będzie w wypożyczeniu (obowiązkowo musi posiadać timer odliczający czas)
 - dodatkowo obowiązkowym jest dodanie kalkulacji na podstawie czasu wypożyczenia auta oraz typu auta (marka/model/rok), dzięki której wyliczona będzie kwota minutowa zsumowany do przykładowej godziny.
 - aplikacja musi posiadać drugą zakładkę która wyświetla wszystkich użytkowników wraz z wypożyczonymi autami oraz czasem jaki pozostał do oddania auta.
