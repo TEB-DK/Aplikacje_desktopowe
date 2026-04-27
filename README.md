@@ -1,4 +1,14 @@
-# Aplikacje desktopowe <img align="top" src="https://github.com/user-attachments/assets/38b3a274-ac3b-4f93-823b-d79c866ccf5a" width="48" height="48" /> / <img align="top" src="https://github.com/user-attachments/assets/4bb7db71-c03a-4a5f-afd7-3957340e38e1" width="48" height="48" />
+<h1>
+	Aplikacje desktopowe 
+</h1>
+
+<table>
+	<tr>
+		<td><img align="top" src="https://github.com/user-attachments/assets/38b3a274-ac3b-4f93-823b-d79c866ccf5a" width="48" height="48" /></td>
+		<td><img align="top" src="https://github.com/user-attachments/assets/4bb7db71-c03a-4a5f-afd7-3957340e38e1" width="48" height="48" /></td>
+	</tr>
+</table>
+
 
 Repozytorium poświęcone aplikacjom desktopowym tworzonym w języku Python i frameworku graficznego interfejsu "Tkinter".
 
