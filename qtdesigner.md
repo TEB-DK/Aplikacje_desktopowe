@@ -248,3 +248,13 @@ W założeniach aplikacji mamy:
 
 Dodatkowo i obowiązkowo:
 - Należy dodać osobny formularz okna rejestrujący użytkowników do aplikacji, oraz zatwierdzający ich "prawo jazdy" aby mogli później w samej aplikacji móc wypożyczyć auto (wykorzystać bazę dane z prostą tabelą lub dwoma np. na użytkowników i auta dostępne w serwisie).
+
+### Zadanie 13
+
+Utwórz aplikację rejestracji pupila do weterynarza.
+W założeniach aplikacji mamy:
+- mieć możliwość rejestracji danych pupila oraz właściciela (jeden duży formularz) do bazy danych
+- panel wyświetlający streszczone dane pupila, a po kliknieciu na blok z danymi pojawia się okno z informacjami dokładnymi pupila oraz własciciela
+- dodatkowo do panelu powyższego występuje przycisk o możliwości wyświetlenia powodu przybycia pupila oraz ewentualnej kuracji, jednak aby przejść do tego panelu należy w pojawiajacym się oknie wpisać pesel własciciela.
+- Aplikacje udekorować dodatkowo odpowiednimi emoji lub obrazkami.
+- Wykorzystanie bazy danych MySQLi.
