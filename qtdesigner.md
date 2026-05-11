@@ -264,6 +264,7 @@ W założeniach aplikacji mamy:
 *  panel logowania dla użytkownika-klienta, który może sprawdzić status swojego pupila, czas lub koszta aktualnego leczenia (musi wystąpić licznik czasu do końca z datą). Logowanie do panelu użytkownika ma odbywać się za pomocą oddzielnego okna aplikacji.
 *  dodatkową funkcjonalność własną dla panelu domyślnego (weterynarii) oraz dla panelu klienta.
 
+
 ### Zadanie 14 
 
 Utwórz aplikacje generujące replikę danych do przepisania.
@@ -274,5 +275,13 @@ Po przepisaniu pole "przepisz dane" zwraca wynik czy dane się zgadzają czy nie
 
 
 <img width="50%" alt="Krysionator" src="https://github.com/user-attachments/assets/9ccc88f6-78bc-49a2-b6ce-cf2b15fb4431" />
+
+
+#### Dla informatyków
+
+Utwórz prosty kalkulator
+
+<img width="30%" alt="image" src="https://github.com/user-attachments/assets/62e15a59-19f3-46bd-bd3e-d4e6ef8141d9" />
+
 
 
