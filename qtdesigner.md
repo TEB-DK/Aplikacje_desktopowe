@@ -265,5 +265,14 @@ W założeniach aplikacji mamy:
 *  dodatkową funkcjonalność własną dla panelu domyślnego (weterynarii) oraz dla panelu klienta.
 
 ### Zadanie 14 
-💀
+
+Utwórz aplikacje generujące replikę danych do przepisania.
+W zakładce "Ustawienia" mają znajdować się możliwości konfiguracji repliki danych - długość hasła, z czego ma się składać, imiona żeńskie / męskie / wszystkie, email długość i domena.
+Po przepisaniu pole "przepisz dane" zwraca wynik czy dane się zgadzają czy nie. Jeśli się zgadzają zmienia kolor na zielony i wyświetla okienko z gratulacjami. W przeciwnym wypadku zmienia kolor na czerwony i zwraca błąd.
+
+* - Dodanie opcjonalnie timera w jakim czasie dane zostały przepisane.
+
+
+<img width="50%" alt="Krysionator" src="https://github.com/user-attachments/assets/9ccc88f6-78bc-49a2-b6ce-cf2b15fb4431" />
+
 
