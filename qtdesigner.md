@@ -258,3 +258,12 @@ W założeniach aplikacji mamy:
 - dodatkowo do panelu powyższego występuje przycisk o możliwości wyświetlenia powodu przybycia pupila oraz ewentualnej kuracji, jednak aby przejść do tego panelu należy w pojawiajacym się oknie wpisać pesel własciciela.
 - Aplikacje udekorować dodatkowo odpowiednimi emoji lub obrazkami.
 - Wykorzystanie bazy danych MySQLi.
+
+* -> Rozszerz aplikację o:
+*  podział danych przesyłanych między dwoma bazami danych (bazowa MySQL, dane jako kopia zapasowa druga baza danych MySQL lub dowolna inna baza).
+*  panel logowania dla użytkownika-klienta, który może sprawdzić status swojego pupila, czas lub koszta aktualnego leczenia (musi wystąpić licznik czasu do końca z datą). Logowanie do panelu użytkownika ma odbywać się za pomocą oddzielnego okna aplikacji.
+*  dodatkową funkcjonalność własną dla panelu domyślnego (weterynarii) oraz dla panelu klienta.
+
+### Zadanie 14 
+💀
+
