@@ -269,6 +269,7 @@ W założeniach aplikacji mamy:
 
 Utwórz aplikacje generujące replikę danych do przepisania.
 W zakładce "Ustawienia" mają znajdować się możliwości konfiguracji repliki danych - długość hasła, z czego ma się składać, imiona żeńskie / męskie / wszystkie, email długość i domena.
+
 Po przepisaniu pole "przepisz dane" zwraca wynik czy dane się zgadzają czy nie. Jeśli się zgadzają zmienia kolor na zielony i wyświetla okienko z gratulacjami. W przeciwnym wypadku zmienia kolor na czerwony i zwraca błąd.
 
 * - Dodanie opcjonalnie timera w jakim czasie dane zostały przepisane.
